@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_890c6fdddac84632a895da30317218cb {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_890c6fdddac84632a895da30317218cb" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_890c6fdddac84632a895da30317218cb = L.map(
+                                  'map_890c6fdddac84632a895da30317218cb',
+                                  {center: [40.70993,-73.99594],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_a93a9fd52390423892b235577b58922d = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_890c6fdddac84632a895da30317218cb);
+
+        
+    
+
+            var circle_marker_9cfee0e5429744a39bff17293a947d2d = L.circleMarker(
+                [40.69855,-73.99248],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_01a592de3f4b416fb34d7261f1e8377c = L.circleMarker(
+                [40.69745,-73.99302],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_a5fbf64813b2403ab4ad46363d77776d = L.circleMarker(
+                [40.69744,-73.99289],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_8bd1e9fc680244c1b6e588352b80db0a = L.circleMarker(
+                [40.69722,-73.99212],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_ecefecdc1bf841b29ca3fb912ccb4bcb = L.circleMarker(
+                [40.69704,-73.99144],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_e2d47589772149189390ed0e7164a75f = L.circleMarker(
+                [40.69649,-73.99133],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_9038578770ce4648bd5807d873528841 = L.circleMarker(
+                [40.69619,-73.99122],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_0dcd237cdcf24aa396b300fb477e3653 = L.circleMarker(
+                [40.69618,-73.99068],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_4c97fbfa068a4879a77ecd65ea9db232 = L.circleMarker(
+                [40.69612,-73.98896],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_cbd37dc94a1742c39b43d0d0fd225311 = L.circleMarker(
+                [40.69595,-73.98457],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_bb7e345a8a3146b2910a75fdba9a31e3 = L.circleMarker(
+                [40.69594,-73.98437],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_a2e7decd611e4e57a9264b59477b754a = L.circleMarker(
+                [40.69612,-73.98448],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_3172319e3db046839028698087c31be0 = L.circleMarker(
+                [40.69714,-73.98496],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_14a5adef67f94e6ea7c6e3ad94237796 = L.circleMarker(
+                [40.69732,-73.98507],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_73cb2adf18514f09a2317dfa25347cfd = L.circleMarker(
+                [40.69763,-73.98522],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_629e1304368e41309ee58bab54e336fe = L.circleMarker(
+                [40.69862,-73.98581],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_0d7c47c5d8ac4901ba2b73f97bf84140 = L.circleMarker(
+                [40.69978,-73.98644],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_cacc291825a54c4e9f5d8909a29ff43b = L.circleMarker(
+                [40.69996,-73.98654],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_7c7be9d7830b4616a1442fd8db768676 = L.circleMarker(
+                [40.70061,-73.9869],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_aa89470980b24827b25d7319377a5a62 = L.circleMarker(
+                [40.70119,-73.98722],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_9b1846416df94594b46118998c1845b2 = L.circleMarker(
+                [40.70172,-73.98751],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_2a7aa1ea97ef478b97aa69a468fa7575 = L.circleMarker(
+                [40.70247,-73.98792],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_842366e499854b48b0f66aea92f6b061 = L.circleMarker(
+                [40.70374,-73.98864],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_f5024d649efa47ba82f6156ec758b7c8 = L.circleMarker(
+                [40.70457,-73.98909],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_0c5a951401304c158b0bcb753aacd4be = L.circleMarker(
+                [40.70631,-73.99016],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_d8c36147d28c4ec2bc17236e7ca3a90e = L.circleMarker(
+                [40.70687,-73.99048],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_6c1d0a8836f4478b8234d49f25db7531 = L.circleMarker(
+                [40.70922,-73.99179],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_8b04ddb3d7b449f7907beb03652e4564 = L.circleMarker(
+                [40.71033,-73.99241],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_6b1e13a7d61d40bdb62b1abd92a68e4f = L.circleMarker(
+                [40.71182,-73.9932],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_d70e920aa6604186869ea8202c88e1c4 = L.circleMarker(
+                [40.71303,-73.99386],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_19ff0e24c7994938acd8ba3e8fc7f0fd = L.circleMarker(
+                [40.71373,-73.99425],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_8d2ad427f8a242bdb7b9fbe94d0ad99e = L.circleMarker(
+                [40.71425,-73.99455],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_9877873aa553436ba77d9e0fd153cd81 = L.circleMarker(
+                [40.71536,-73.99515],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_b66480c74d924abcbd0f91ea4db9def2 = L.circleMarker(
+                [40.71548,-73.99522],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_dd7cbcdfa8aa46d78fdfcff751318a52 = L.circleMarker(
+                [40.71559,-73.99524],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_5d5b896e21b14525a895870d9095d4da = L.circleMarker(
+                [40.71564,-73.99526],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_1220d94e9e564d539348f988457b6349 = L.circleMarker(
+                [40.71598,-73.99544],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_e1f6b48085414d3291c70225acaddead = L.circleMarker(
+                [40.71663,-73.99581],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_9dd7f3a8690440fd84d5b76d8f3d1ea8 = L.circleMarker(
+                [40.71728,-73.99543],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_6df4595dcc4a4ffe8e64b404d9aba8ba = L.circleMarker(
+                [40.71814,-73.99497],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_3302a909379c4da8b167b3cedb45d309 = L.circleMarker(
+                [40.71943,-73.99441],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_b44ebd39a1854bcaad1208d085a558f1 = L.circleMarker(
+                [40.72028,-73.99406],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_215ecf9576c241baa6667560554d96f1 = L.circleMarker(
+                [40.7205,-73.99396],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_7b35dfc855d34f9883ebb469632c3d65 = L.circleMarker(
+                [40.72061,-73.99393],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_5581405366714a629311a5c2cad08254 = L.circleMarker(
+                [40.72068,-73.99383],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_c9fb69e3e336461f960a9169f6573b0f = L.circleMarker(
+                [40.72074,-73.99379],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_ed7f4de5ae7a437fb189bdb0388480ae = L.circleMarker(
+                [40.72094,-73.99372],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_bb84f05940d441b998dc868eab026861 = L.circleMarker(
+                [40.7224,-73.99317],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_767eb1439d9444e1bac724432e7e1983 = L.circleMarker(
+                [40.72356,-73.99273],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_f0af571b68da4eeba1b2586a41f936bd = L.circleMarker(
+                [40.72404,-73.99254],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_23bdd9c45ae348989ef732870570ecb1 = L.circleMarker(
+                [40.72418,-73.99252],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_f2eb067a353646989a94d24fe37ccec9 = L.circleMarker(
+                [40.72523,-73.99215],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_b9d58f99ad93411fbe6de74d019e58bc = L.circleMarker(
+                [40.72637,-73.99173],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_2cdb907fd2664c95a928c53335a9a934 = L.circleMarker(
+                [40.72707,-73.99149],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_0398260ac49a43ee886fe31f7b9e2e3d = L.circleMarker(
+                [40.72755,-73.99131],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_ce1a3c6334ed40929b836e92d1dde2d3 = L.circleMarker(
+                [40.72773,-73.9912],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_84e27820ffc54516959393a1cba0e6ab = L.circleMarker(
+                [40.72848,-73.99065],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_798dd3121e144efaab7ae3c8dbbd7670 = L.circleMarker(
+                [40.72891,-73.99038],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_c0782e66ecae4334af5a600da59563ad = L.circleMarker(
+                [40.72986,-73.98968],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_00269a3a8c7f4e2489fe6e0d5b471fd4 = L.circleMarker(
+                [40.73012,-73.98947],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_48d3aadddfa0486c8a1d0353b1e9f514 = L.circleMarker(
+                [40.73072,-73.98906],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+    
+
+            var circle_marker_6854ae09b88f4de38843a3acee7e3c72 = L.circleMarker(
+                [40.73113,-73.98876],
+                {
+                    color: 'black',
+                    weight: 0,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_890c6fdddac84632a895da30317218cb);
+            
+</script>
