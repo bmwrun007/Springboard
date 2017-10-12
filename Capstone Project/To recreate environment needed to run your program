@@ -1,0 +1,9 @@
+To recreate environment needed to run your program:
+install python2.7
+pip install polyline
+pip install googlemaps
+pip install folium
+create directory 'C:\Users\Bryan\Documents\GitHub\Springboard\Capstone Project\Data\\'
+put all the citibike data into this directory (07-2013 through 2017-03)
+get phantomjs from here: http://phantomjs.org/download.html
+get ffmpeg from here: https://www.ffmpeg.org/download.html
