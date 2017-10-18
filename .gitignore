@@ -16,6 +16,17 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.png
+*.html
+/Capstone Project/Image Pipe/
+/Capstone Project/FFmpeg/
+/Capstone Project/PhantomJS/
+/Capstone Project/Data/
+/Capstone Project/additional_trips1.pickle
+/Capstone Project/additional_trips2.pickle
+/Capstone Project/additional_trips3.pickle
+/Capstone Project/useful_links.txt
+/Capstone Project/.ipynb_checkpoints/
 
 # =========================
 # Operating System Files
